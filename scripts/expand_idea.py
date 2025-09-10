@@ -27,7 +27,9 @@ def get_todo_ideas(sheet_name="automated-content-maker", worksheet_name="Sheet1"
 def expand_idea_with_gemini(idea_text):
     prompt = f"""
     Take the following idea and expand it into 4 distinct scenes. Each scene should be a short, creative, and visually impactful description of an action or observation that would work well as an overlay text on video clips. The scenes should be concise and vivid, capturing the essence of the idea. Each scene should be clear and dramatic, yet short enough to fit on screen as a caption. The descriptions should focus on different aspects of the situation, each one unique but all tied to the central theme of the idea.
-
+    Ensure that the scenes are suitable for a short video format, with each scene being a separate line in the output. The scenes should be written in the present tense, as if the viewer is experiencing them in real-time.
+    Make sure that the scenes are directly related to the idea and can be visually represented in a short video format. The scenes should evoke strong imagery and emotions, making them suitable for a dynamic and engaging video. Try to not include vague or ambiguous descriptions, but rather focus on specific actions or observations that can be easily visualized.
+    
     Please ensure that each scene is written as a separate line, with no extra text or explanations. Only the scene descriptions should be listed, each on its own line. Here is an example of how the format should look:
 
     Example idea: "POV you wake up as a giant"
